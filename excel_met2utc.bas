@@ -1,3 +1,4 @@
+Attribute VB_Name = "Module1"
 Function met2utc(met As Double) As String
     ' Ensures the formula recalculates when sheet data changes
     Application.Volatile
@@ -28,7 +29,7 @@ Function met2utc(met As Double) As String
     On Error GoTo 0
 
     ' 3. Retrieve Date/Time Offset and Scale Factor from the evaluated config range
-    offsetVal = CDbl(configRange.Cells(1).Value)
+    offsetVal = CDbl(CDate(configRange.Cells(1).Value))
     scaleFactor = configRange.Cells(2).Value
 
     ' Check for division by zero on the scale factor
@@ -79,7 +80,7 @@ Function met2utc(met As Double) As String
     fracString = Format(fracSeconds, ".000000")
 
     ' 10. Construct the final precise string
-    met2utc = Format(finalYDate, "yy-") & _
+    met2utc = Format(finalYDate, "yyyy-") & _
               Format(doy, "000") & _
               Format(finalYDate, "/hh:mm:ss") & _
               fracString

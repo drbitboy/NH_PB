@@ -1,4 +1,6 @@
-﻿Function met2utc(met As Double) As String
+﻿REM  *****  BASIC  *****
+
+Function met2utc(met As Double) As String
     Dim oDoc As Object
     Dim oSheet As Object
     Dim xRange As Object, yRange As Object, configRange As Object
@@ -86,7 +88,7 @@
     finalYDate = Int(finalYDayRaw)
     
     ' 8. Calculate Day of Year (DOY) using Calc function access
-    sYear = oFunc.callFunction("TEXT", Array(finalYDate, "yy"))
+    sYear = oFunc.callFunction("TEXT", Array(finalYDate, "yyyy"))
     Dim firstDayOfYear As Double
     firstDayOfYear = oFunc.callFunction("DATE", Array(CInt(oFunc.callFunction("YEAR", Array(finalYDate))), 1, 1))
     doy = Clng(finalYDate - firstDayOfYear + 1)
