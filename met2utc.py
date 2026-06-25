@@ -63,7 +63,7 @@ if "__main__" == __name__:
 
     ### Add equiv. of 20y of MET to last coeffs row (tiks/modulus,tdt)
     ### to model (extrapolate) times after that last row
-    twentyy = 20. * 365.25 * sp.spd() 
+    twentyy = 20. * 365.25 * sp.spd()
     newrow = numpy.array([coeffs[-1,0] + twentyy
                          ,coeffs[-1,1]+(twentyy * coeffs[-1,2])
                          ,coeffs[-1,2]
