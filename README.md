@@ -34,7 +34,7 @@
 * met2utc.csv - data for worksheet sclk_data as Comma-Separated Values
 * met2utc.py - generate met2utc.csv from SPICE kernels
 * naif0012.tls, new-horizons_3381.tsc - default SPICE kernels
-* mk.tm - utility meta-kernel, not other than for development
+* mk.tm - utility meta-kernel, not used other than for development
 
 ## Background
 
