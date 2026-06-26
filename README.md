@@ -50,3 +50,6 @@
   * N.B.
     * For the eXcel VBA and Libre Calc Macro Basic scripts
     * These links may expire
+* NAIF/SPICE Toolkit references
+  * (Time Required Reading)[https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/time.html]
+  * (SCLK Required Reading)[https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/C/req/sclk.html]
