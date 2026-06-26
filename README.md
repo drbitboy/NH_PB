@@ -12,7 +12,7 @@
 
 ## Caveats and notes
 
-* The MET argument is a numeric value, equal to approximately $(year-2006) * \pi * 10^7$
+* The MET argument is a numeric value, equal to approximately $(year-2006) \times \pi \times 10^7$
 * The MET argument will typically be a Cell reference e.g. **met2utc(A3)**, but it could also be an expression
 * The MET-to-UTC piecewise linear interpolation data have a limited range; as of 26-June-2026:
   * The Spacecraft CLock Kernel (NAIF/SPICE SCLK) used is **new_horizons_3381.tsc**
