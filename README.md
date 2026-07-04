@@ -10,6 +10,15 @@
   * And enable macros in that Calc workbook
 * Use the expression **=met2utc(met)** anywhere in that workbook to convert MET to UTC
 
+* New macro **=m2u(met)** ca. 2026-07-04
+  * Piecewise linear model base on SCLK_SCET files
+    * ix:/home/soc/MOC/kernels/coeff/new-horizons_NNNN.coeff
+    * May not be as good around leap seconds
+    * Goes all the way back to launch i.e. MET=0
+  * Self-contained
+    * Can be updated directly into a Worksheet in a Workbook
+    * Without running external Python script or importing CSV data
+
 ## Caveats and notes
 
 * The MET argument is a numeric value of spacecraft seconds since launch in January, 2006
@@ -30,13 +39,15 @@
 ## Source files
 
 * met2utc.xlsm - eXcel sample workbook
-* met2utc.ods - LibreOffice Calc sample workbook
-* excel_met2utc.bas - eXcel VBA code file with function met2utc
-* librecalc_met2utc.bas - Calc Macro Basic file with function met2utc
 * met2utc.csv - data for worksheet sclk_data as Comma-Separated Values
 * met2utc.py - generate met2utc.csv from SPICE kernels
 * naif0012.tls, new-horizons_3381.tsc - default SPICE kernels
 * mk.tm - utility meta-kernel, not used other than for development
+* new-horizons_3381.coeff - SCLK_SCET file; "3381" is updated over time
+* Out of date or obsolete:
+  * excel_met2utc.bas - eXcel VBA code file with function met2utc
+  * met2utc.ods - LibreOffice Calc sample workbook
+  * librecalc_met2utc.bas - Calc Macro Basic file with function met2utc
 
 ## Background
 
