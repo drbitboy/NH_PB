@@ -10,6 +10,15 @@
   * And enable macros in that Calc workbook
 * Use the expression **=met2utc(met)** anywhere in that workbook to convert MET to UTC
 
+* For new macro **=m2u(met)**, and to update data:
+  * (i) RUN macro parse_sclk_coeff
+    * Select latest SCLK_SCET file new-horizons_NNNN.coeff
+    * Creates Worksheet "**RENAME_SHEET_m2u_data**"
+  * (ii) Delete or rename existing Worksheet "**m2u_data**"
+  * (iii) Rename **RENAME_SHEET_m2u_data**" to "**m2u_data**"
+
+## Caveats and notes
+
 * New macro **=m2u(met)** ca. 2026-07-04
   * Piecewise linear model base on SCLK_SCET files
     * ix:/home/soc/MOC/kernels/coeff/new-horizons_NNNN.coeff
@@ -19,12 +28,12 @@
     * Can be updated directly into a Worksheet in a Workbook
     * Without running external Python script or importing CSV data
 
-## Caveats and notes
-
 * The MET argument is a numeric value of spacecraft seconds since launch in January, 2006
   * MET is roughly equal to $(year-2006) \times \pi \times 10^7$
     *  where $year$ is fractional year e.g. $year = 1.5$ for July, 2007
+
 * The MET argument will typically be a Cell reference e.g. **met2utc(A3)**, but it could also be an expression
+
 * The MET-to-UTC piecewise linear interpolation data have a limited range; as of 26-June-2026:
   * The Spacecraft CLock Kernel (NAIF/SPICE SCLK) used is **new_horizons_3381.tsc**
     * The last entry in that SCLK is ~August, 2025
