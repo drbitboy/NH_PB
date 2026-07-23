@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="8pwIm11rHzy2fwZkQPxO">
-    <mxGraphModel dx="501" dy="358" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="877" dy="626" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -94,7 +94,7 @@
             <mxPoint x="421.58000000000004" y="961" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="_fD-yj-OL9M4TpKsppHa-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;I&lt;sub&gt;row &lt;/sub&gt;&amp;lt;= I&lt;sub&gt;row-1&lt;/sub&gt;&amp;nbsp;+ 1&lt;br&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;This cell in the row above (row-1) contains&lt;/div&gt;&lt;div&gt;an offset from a previous ON cmd,&lt;/div&gt;&lt;div&gt;increment its value by 1 for the current cell&lt;/div&gt;" vertex="1">
+        <mxCell id="_fD-yj-OL9M4TpKsppHa-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;I&lt;sub&gt;row &lt;/sub&gt;= I&lt;sub&gt;row-1&lt;/sub&gt;&amp;nbsp;+ 1&lt;br&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;This cell in the row above (row-1) contains&lt;/div&gt;&lt;div&gt;an offset from a previous ON cmd,&lt;/div&gt;&lt;div&gt;increment its value by 1 for the current cell&lt;/div&gt;" vertex="1">
           <mxGeometry height="82" width="230" x="423.58000000000004" y="920" as="geometry" />
         </mxCell>
         <mxCell id="_fD-yj-OL9M4TpKsppHa-22" parent="1" style="text;strokeColor=none;fillColor=none;html=1;fontSize=22;fontStyle=1;verticalAlign=middle;align=center;autosizeText=1;" value="&lt;div&gt;&lt;u&gt;Cells in Column I&lt;/u&gt;&lt;/div&gt;&lt;div&gt;Value is Row Offset from the&lt;/div&gt;&lt;div&gt;most recent ON Command&lt;/div&gt;" vertex="1">
