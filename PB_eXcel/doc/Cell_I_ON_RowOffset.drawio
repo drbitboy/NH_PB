@@ -1,0 +1,106 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="8pwIm11rHzy2fwZkQPxO">
+    <mxGraphModel dx="501" dy="358" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="_fD-yj-OL9M4TpKsppHa-1" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="$F&lt;sub&gt;row&lt;/sub&gt; = &quot;ON&quot;?&lt;br&gt;&lt;br&gt;Is the current row the ON cmd?" vertex="1">
+          <mxGeometry height="169.5" width="218" x="120" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="_fD-yj-OL9M4TpKsppHa-2" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;exitX=1.003;exitY=0.532;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="338.41999999999996" y="236.15999999999997" as="sourcePoint" />
+            <mxPoint x="418" y="237" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_fD-yj-OL9M4TpKsppHa-3" connectable="0" parent="_fD-yj-OL9M4TpKsppHa-2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;div&gt;YES&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.2087" y="1" as="geometry">
+            <mxPoint x="-37" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_fD-yj-OL9M4TpKsppHa-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;I&lt;sub&gt;row &lt;/sub&gt;= 0&lt;br&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;This row is the ON cmd,&lt;/div&gt;&lt;div&gt;so set offset to 0&lt;/div&gt;" vertex="1">
+          <mxGeometry height="82" width="230" x="420" y="196" as="geometry" />
+        </mxCell>
+        <mxCell id="_fD-yj-OL9M4TpKsppHa-5" edge="1" parent="1" source="_fD-yj-OL9M4TpKsppHa-1" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="450" y="400" as="sourcePoint" />
+            <mxPoint x="230" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_fD-yj-OL9M4TpKsppHa-6" connectable="0" parent="_fD-yj-OL9M4TpKsppHa-5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="NO" vertex="1">
+          <mxGeometry relative="1" x="-0.1072" as="geometry">
+            <mxPoint x="21" y="-21" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_fD-yj-OL9M4TpKsppHa-7" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="I&lt;sub&gt;row-1&lt;/sub&gt; = &quot;Offset ...&quot;?&lt;br&gt;&lt;br&gt;Is the previous row&lt;br&gt;the header?" vertex="1">
+          <mxGeometry height="169.5" width="218" x="121" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="_fD-yj-OL9M4TpKsppHa-8" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;exitX=1.003;exitY=0.532;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="340" y="474.15999999999997" as="sourcePoint" />
+            <mxPoint x="419.58000000000004" y="475" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_fD-yj-OL9M4TpKsppHa-9" connectable="0" parent="_fD-yj-OL9M4TpKsppHa-8" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;div&gt;YES&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.2087" y="1" as="geometry">
+            <mxPoint x="-37" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_fD-yj-OL9M4TpKsppHa-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;I&lt;sub&gt;row &lt;/sub&gt;= &quot;&quot;&lt;br&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;This row above is the header,&lt;/div&gt;&lt;div&gt;there is no known previous ON cmd,&lt;/div&gt;&lt;div&gt;leave cell blank&lt;/div&gt;" vertex="1">
+          <mxGeometry height="82" width="230" x="421.58000000000004" y="434" as="geometry" />
+        </mxCell>
+        <mxCell id="_fD-yj-OL9M4TpKsppHa-11" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="230" y="560" as="sourcePoint" />
+            <mxPoint x="231" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_fD-yj-OL9M4TpKsppHa-12" connectable="0" parent="_fD-yj-OL9M4TpKsppHa-11" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="NO" vertex="1">
+          <mxGeometry relative="1" x="-0.1072" as="geometry">
+            <mxPoint x="21" y="-21" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_fD-yj-OL9M4TpKsppHa-13" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="I&lt;sub&gt;row-1&lt;/sub&gt; = &quot;&quot;?&lt;br&gt;&lt;br&gt;Is the previous cell blank?" vertex="1">
+          <mxGeometry height="169.5" width="218" x="123" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="_fD-yj-OL9M4TpKsppHa-14" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;exitX=1.003;exitY=0.532;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="342" y="714.16" as="sourcePoint" />
+            <mxPoint x="421.58000000000004" y="715" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_fD-yj-OL9M4TpKsppHa-15" connectable="0" parent="_fD-yj-OL9M4TpKsppHa-14" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;div&gt;YES&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.2087" y="1" as="geometry">
+            <mxPoint x="-37" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_fD-yj-OL9M4TpKsppHa-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;I&lt;sub&gt;row &lt;/sub&gt;= &quot;&quot;&lt;br&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;This row above is blank,&lt;/div&gt;&lt;div&gt;there is no known previous ON cmd,&lt;/div&gt;&lt;div&gt;leave cell blank&lt;/div&gt;" vertex="1">
+          <mxGeometry height="82" width="230" x="423.58000000000004" y="674" as="geometry" />
+        </mxCell>
+        <mxCell id="_fD-yj-OL9M4TpKsppHa-17" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="232" y="800" as="sourcePoint" />
+            <mxPoint x="233" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_fD-yj-OL9M4TpKsppHa-18" connectable="0" parent="_fD-yj-OL9M4TpKsppHa-17" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="NO" vertex="1">
+          <mxGeometry relative="1" x="-0.1072" as="geometry">
+            <mxPoint x="21" y="-21" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_fD-yj-OL9M4TpKsppHa-19" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="230" y="960" as="sourcePoint" />
+            <mxPoint x="421.58000000000004" y="961" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_fD-yj-OL9M4TpKsppHa-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;I&lt;sub&gt;row &lt;/sub&gt;&amp;lt;= I&lt;sub&gt;row-1&lt;/sub&gt;&amp;nbsp;+ 1&lt;br&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;This cell in the row above (row-1) contains&lt;/div&gt;&lt;div&gt;an offset from a previous ON cmd,&lt;/div&gt;&lt;div&gt;increment its value by 1 for the current cell&lt;/div&gt;" vertex="1">
+          <mxGeometry height="82" width="230" x="423.58000000000004" y="920" as="geometry" />
+        </mxCell>
+        <mxCell id="_fD-yj-OL9M4TpKsppHa-22" parent="1" style="text;strokeColor=none;fillColor=none;html=1;fontSize=22;fontStyle=1;verticalAlign=middle;align=center;autosizeText=1;" value="&lt;div&gt;&lt;u&gt;Cells in Column I&lt;/u&gt;&lt;/div&gt;&lt;div&gt;Value is Row Offset from the&lt;/div&gt;&lt;div&gt;most recent ON Command&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="610" x="110" y="10" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
