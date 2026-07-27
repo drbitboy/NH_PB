@@ -1,0 +1,68 @@
+Feedback from Ann Harch about the rough-cut ExportToSASF Sub/Module
+
+========================================================================
+    All requests were labeled swap (including the pepssi requests)
+    and the comment fields had SWAP instead of PEPSSI in the pepssi
+    commands.  It looks like I followed the rules for datatypes.
+    There are no red cells so maybe that one is a bug?
+
+Fixed this bug
+
+
+========================================================================
+    there was comma missing at the end of all COMMENT lines, and one
+    comma missing in the last request at the end of the command line
+    starting with 'SSR".
+
+Fixed this bug
+
+
+========================================================================
+    the file had those carriage return characters (^M) everywhere which
+    I removed manually with a vi command.  I can't remember if seqgen
+    accepts those, sorry I didn't test that yet but I can. I think
+    you'll see these in the difference file.
+
+Fixed this, eliminating most carriage-returns
+
+- Also added a boilerplate header, as well as the blank and $$EOF lines
+  at the bottom.
+- Duplicated the SEQGEN writer's behavior,
+  - which puts carriage returns at the end of the first dozen or so
+    lines of the header, and nowhere after that
+
+
+========================================================================
+    The format of the file (indentations and so forth) is different from
+    our normal format. I started to reformat it but it was very time
+    consuming and I didn't whether to use tabs or insert characters so I
+    stopped after a couple requests.  Luckily Seqgen actually accepted
+    it as is, and reformatted it to the usual format when it overwrote
+    the file after running (it's normal for seqgen to overwrite the
+    input sasfs). 
+
+Duplicated the SEQGEN writer's behavior i.e. TABs for indentation
+
+
+========================================================================
+    It didn't include the command for row 405 as a second activity in
+    the first request (222_2) and it actually didn't produce a command
+    for row 405 at all.  I didn't follow the rules. Reading the rules on
+    btc_mods in your latest btc011 ss, to continue playing back more
+    data on previous track, I think it says that O must be blank, and P
+    non-blank. In the spreadsheet they were both blank. 
+
+Not a bug; this was a typo in my instructions in Worksheet btc_mods
+- Swapped (blank,continue) in O405:P405 to be (continue,blank), and it
+  worked as designed
+  - Also corrected some other typos in the Workshet 
+
+
+========================================================================
+    To test, I just a word in P and tested again and it still didn't
+    create the playback command for 405 at all, much less include it as
+    a 2nd activity in 222_2 track playback . You'll need to check this
+    one out. That was the only time in the load where we had two
+    commands on the same track.  
+
+See previous item
