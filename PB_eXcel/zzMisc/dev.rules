@@ -1,0 +1,124 @@
+0	Worksheet	dev	Sheet1
+1
+1	.AppliesTo.Address	$P:$P
+1	TypeName(rule)	FormatCondition
+1	.StopIfTrue	True
+1	.Formula1	=AND(ISNUMBER(P1),P1>20000,P1<100000)
+1	.Formula2	N/A
+1	.Interior.Color	&HCCF2FF
+1	.Font.Bold 	True
+1	.Borders(xlEdgeLeft)	True
+1	.Borders(xlEdgeRight)	True
+1	.Borders(xlEdgeTop)	True
+2
+2	.AppliesTo.Address	$C:$K
+2	TypeName(rule)	FormatCondition
+2	.StopIfTrue	True
+2	.Formula1	=TEXTJOIN("",FALSE,$E1:$K1)="HSK3DT1DT2DT3DT4SDT1HSK4"
+2	.Formula2	N/A
+2	.Interior.Color	&HCDC2E0
+3
+3	.AppliesTo.Address	$O:$P,$E:$K
+3	TypeName(rule)	FormatCondition
+3	.StopIfTrue	True
+3	.Formula1	=AND(XOR(TEXTJOIN("",TRUE,$E1:$I1)<>"",TEXTJOIN("",TRUE,$J1:$K1)<>""),$O1="",$P1="")
+3	.Formula2	N/A
+3	.Interior.Color	&HFF
+3	.Font.Color	&HFFFFFF
+3	.Font.Strikethrough 	True
+4
+4	.AppliesTo.Address	$E:$K
+4	TypeName(rule)	FormatCondition
+4	.StopIfTrue	True
+4	.Formula1	=NOT(OR(EXACT(E1,""),EXACT(E1,E$1)))
+4	.Formula2	N/A
+4	.Interior.Color	&HFF
+4	.Font.Color	&HFFFFFF
+4	.Font.Strikethrough 	True
+5
+5	.AppliesTo.Address	$C:$K
+5	TypeName(rule)	FormatCondition
+5	.StopIfTrue	True
+5	.Formula1	=AND(TEXTJOIN("",FALSE,$E1:$I1) <>"",TEXTJOIN("",FALSE,$J1:$K1) <> "")
+5	.Formula2	N/A
+5	.Interior.Color	&HFF
+5	.Font.Color	&HFFFFFF
+5	.Font.Strikethrough 	True
+6
+6	.AppliesTo.Address	$L:$M
+6	TypeName(rule)	FormatCondition
+6	.StopIfTrue	True
+6	.Formula1	=EXACT($Y1,"PEP")
+6	.Formula2	N/A
+6	.Interior.Color	&HCCFFCC
+6	.Font.Bold 	True
+7
+7	.AppliesTo.Address	$L:$M
+7	TypeName(rule)	FormatCondition
+7	.StopIfTrue	True
+7	.Formula1	=EXACT($Y1,"SWA")
+7	.Formula2	N/A
+7	.Interior.Color	&HBFFF
+7	.Font.Bold 	True
+8
+8	.AppliesTo.Address	$P:$X
+8	TypeName(rule)	FormatCondition
+8	.StopIfTrue	True
+8	.Formula1	=EXACT(P$1,P1)
+8	.Formula2	N/A
+8	.Interior.Color	&HCCF2FF
+8	.Borders(xlEdgeLeft)	True
+8	.Borders(xlEdgeRight)	True
+8	.Borders(xlEdgeTop)	True
+8	.Borders(xlEdgeBottom)	True
+9
+9	.AppliesTo.Address	$O:$O,$Y:$Y
+9	TypeName(rule)	FormatCondition
+9	.StopIfTrue	False
+9	.Formula1	=OR(EXACT($Y1,"PEP"),EXACT($Y1,"SWA"))
+9	.Formula2	N/A
+9	.Interior.Color	&HF7EBDD
+9	.Font.Bold 	True
+10
+10	.AppliesTo.Address	$X:$X
+10	TypeName(rule)	FormatCondition
+10	.StopIfTrue	False
+10	.Formula1	=IF(ISNUMBER(X1),IF(X1>0.1,TRUE))
+10	.Formula2	N/A
+10	.Font.Color	&HFF
+11
+11	.AppliesTo.Address	$W:$W
+11	TypeName(rule)	FormatCondition
+11	.StopIfTrue	False
+11	.Formula1	=IF(ISNUMBER(W1),IF(ISNUMBER(X1048576),IF(X1048576>0.5,IF(X1048576=W1,TRUE))))
+11	.Formula2	N/A
+11	.Font.Color	&HFF
+12
+12	.AppliesTo.Address	$Q:$Q
+12	TypeName(rule)	FormatCondition
+12	.StopIfTrue	False
+12	.Formula1	=AND(OR(EXACT($Y1,"SWA"),EXACT($Y1,"PEP")),EXACT(LEFT($Z1,1),"S"))
+12	.Formula2	N/A
+12	.Interior.Color	&HEED7BD
+13
+13	.AppliesTo.Address	$R:$R
+13	TypeName(rule)	FormatCondition
+13	.StopIfTrue	False
+13	.Formula1	=AND(OR(EXACT($Y1,"SWA"),EXACT($Y1,"PEP")),EXACT(RIGHT($Z1,1),"E"))
+13	.Formula2	N/A
+13	.Interior.Color	&HEED7BD
+14
+14	.AppliesTo.Address	$Q:$T,$X:$X
+14	TypeName(rule)	FormatCondition
+14	.StopIfTrue	False
+14	.Formula1	=OR(EXACT($Y1,"SWA"),EXACT($Y1,"PEP"))
+14	.Formula2	N/A
+14	.Interior.Color	&HCCF2FF
+15
+15	.AppliesTo.Address	$P:$P
+15	TypeName(rule)	FormatCondition
+15	.StopIfTrue	False
+15	.Formula1	=OR(EXACT($Y1,"SWA"),EXACT($Y1,"PEP"))
+15	.Formula2	N/A
+15	.Interior.Color	&HCCF2FF
+15	.Font.Bold 	True
