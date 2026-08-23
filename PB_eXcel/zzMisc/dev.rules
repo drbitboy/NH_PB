@@ -14,7 +14,7 @@
 2	.AppliesTo.Address	$C:$K
 2	TypeName(rule)	FormatCondition
 2	.StopIfTrue	True
-2	.Formula1	=TEXTJOIN("",FALSE,$E1:$K1)="HSK3DT1DT2DT3DT4SDT1HSK4"
+2	.Formula1	=TEXTJOIN("",FALSE,$E1:$J1)="HSK3DT1DT2DT3DT4SDT1HSK4"
 2	.Formula2	N/A
 2	.Interior.Color	&HCDC2E0
 3
@@ -27,7 +27,7 @@
 3	.Font.Color	&HFFFFFF
 3	.Font.Strikethrough 	True
 4
-4	.AppliesTo.Address	$E:$K
+4	.AppliesTo.Address	$E:$J
 4	TypeName(rule)	FormatCondition
 4	.StopIfTrue	True
 4	.Formula1	=NOT(OR(EXACT(E1,""),EXACT(E1,E$1)))
@@ -90,7 +90,7 @@
 11	.AppliesTo.Address	$W:$W
 11	TypeName(rule)	FormatCondition
 11	.StopIfTrue	False
-11	.Formula1	=IF(ISNUMBER(W1),IF(ISNUMBER(X1048576),IF(X1048576>0.5,IF(X1048576=W1,TRUE))))
+11	.Formula1	=IF(ISNUMBER(W1),IF(W1>0.5,IF(X1048576=W1,TRUE)))
 11	.Formula2	N/A
 11	.Font.Color	&HFF
 12
@@ -108,7 +108,7 @@
 13	.Formula2	N/A
 13	.Interior.Color	&HEED7BD
 14
-14	.AppliesTo.Address	$Q:$T,$X:$X
+14	.AppliesTo.Address	$X:$X,$Q:$T
 14	TypeName(rule)	FormatCondition
 14	.StopIfTrue	False
 14	.Formula1	=OR(EXACT($Y1,"SWA"),EXACT($Y1,"PEP"))
